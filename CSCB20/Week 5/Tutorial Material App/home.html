@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title%}
+	<title>My home page {{title}}</title>
+	{% else %}
+	<title>My home page</title>
+	{% endif %}
+</head>
+<body>
+	{% for post in data %}
+       <h1>{{post.Name}}</h1>
+       <p>{{post.Date}}</p>
+       <p>{{post.Topic}}</p>
+	{% endfor %}
+</body>
+</html>
